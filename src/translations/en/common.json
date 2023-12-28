@@ -1,0 +1,22 @@
+{
+    "game":{
+        "nextplayer":"Next player",
+        "winner":"Winner",
+        "tie":"Tie",
+        "gotomovement":"Go to movement",
+        "gotostart":"Go to start of the game",
+        "currentmovement":"You are in the movement",
+        "order":{
+            "label":"Order by",
+            "ascendent":"ascendent",
+            "descendent":"descendent"
+        }
+    },
+    "language-selector":{
+        "label": "Change language",
+        "languages":{
+            "es":"Spanish",
+            "en":"English"
+        }
+    }
+}

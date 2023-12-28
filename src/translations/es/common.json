@@ -1,0 +1,23 @@
+{
+    "game":{
+        "nextplayer":"Siguiente jugador",
+        "winner":"Ganador",
+        "tie":"Empate",
+        "gotomovement":"Ir al movimiento",
+        "gotostart":"Ir al inicio del juego",
+        "currentmovement":"Estás en el movimiento",
+        "order":{
+            "label":"Ordenar de forma",
+            "ascendent":"ascendente",
+            "descendent":"descendente"
+        }
+
+    },
+    "language-selector":{
+        "label": "Cambiar idioma",
+        "languages":{
+            "es":"Español",
+            "en":"Inglés"
+        }
+    }
+}

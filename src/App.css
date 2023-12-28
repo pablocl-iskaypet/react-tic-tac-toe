@@ -1,38 +1,130 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
   text-align: center;
+  width: 34px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.square--winning {
+  background-color: rgb(208, 239, 72);
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.status {
+  margin-bottom: 10px;
+}
+.game {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  padding:20px;
+  width:90%;
+  max-width:600px;
+  margin:0 auto;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.game-info {
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.game-info__movement{
+  margin-bottom:5px;
+}
+
+header{
+  text-align:center;
+  background:#333;
+  color:#fff;
+  height:3rem;
+  line-height:3rem
+}
+
+@media screen and (max-width: 512px) {
+  .game-board{
+    margin-bottom:20px
   }
-  to {
-    transform: rotate(360deg);
+  .board-row{
+    justify-content: center;
+    display: flex;
+  }
+  .game-info {
+    width:95%;
+    margin-left:0;
   }
 }
